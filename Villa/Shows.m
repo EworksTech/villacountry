@@ -25,20 +25,20 @@
 - (void)viewDidLoad
 {
     
-    UIImage *selectedImage0 = [UIImage imageNamed:@"btn_show_p.png"];
-    UIImage *unselectedImage0 = [UIImage imageNamed:@"btn_show_s.png"];
+    UIImage *selectedImage0 = [UIImage imageNamed:@"ew_btn_show_p.png"];
+    UIImage *unselectedImage0 = [UIImage imageNamed:@"ew_btn_show_s.png"];
     
-    UIImage *selectedImage1 = [UIImage imageNamed:@"btn_agenda_p.png"];
-    UIImage *unselectedImage1 = [UIImage imageNamed:@"btn_agenda_s.png"];
+    UIImage *selectedImage1 = [UIImage imageNamed:@"ew_btn_agenda_p.png"];
+    UIImage *unselectedImage1 = [UIImage imageNamed:@"ew_btn_agenda_s.png"];
     
-    UIImage *selectedImage2 = [UIImage imageNamed:@"btn_mapa_p.png"];
-    UIImage *unselectedImage2 = [UIImage imageNamed:@"btn_mapa_s.png"];
+    UIImage *selectedImage2 = [UIImage imageNamed:@"ew_btn_map_p.png"];
+    UIImage *unselectedImage2 = [UIImage imageNamed:@"ew_btn_map_s.png"];
     
-    UIImage *selectedImage3 = [UIImage imageNamed:@"btn_contato_p.png"];
-    UIImage *unselectedImage3 = [UIImage imageNamed:@"btn_contato_s.png"];
+    UIImage *selectedImage3 = [UIImage imageNamed:@"ew_btn_contato_p.png"];
+    UIImage *unselectedImage3 = [UIImage imageNamed:@"ew_btn_contato_s.png"];
     
-    UIImage *selectedImage4 = [UIImage imageNamed:@"btn_ao_vivo_pB.png"];
-    UIImage *unselectedImage4 = [UIImage imageNamed:@"btn_ao_vivo_sB.png"];
+    UIImage *selectedImage4 = [UIImage imageNamed:@"ew_btn_aovivo_p.png"];
+    UIImage *unselectedImage4 = [UIImage imageNamed:@"ew_btn_aovivo_s.png"];
     
     
     UITabBar *tabBar = self.tabBarController.tabBar;

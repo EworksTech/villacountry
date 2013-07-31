@@ -552,7 +552,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="tIk-cb-sCG" kind="push" id="oa2-Bs-gW1"/>
+                                    <action selector="pressButton:" destination="BoP-8J-jxN" eventType="touchUpInside" id="0L3-6j-BMs"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="fHa-gC-bBe">
@@ -618,7 +618,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="VQz-AM-m3Z">
-                                <rect key="frame" x="0.0" y="53" width="320" height="346"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="355"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <connections>
                                     <outlet property="delegate" destination="pcB-Gd-PPw" id="I8O-Ns-2Ie"/>
@@ -664,7 +664,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="gCX-FG-l6k">
-                                <rect key="frame" x="0.0" y="54" width="320" height="346"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="356"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jkk-NB-WOw">
@@ -743,7 +743,7 @@
                                 <rect key="frame" x="267" y="81" width="36" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
-                                <state key="normal" image="ico_facebook2.png">
+                                <state key="normal" image="ew_cont_face_icon.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -758,7 +758,7 @@
                                 <rect key="frame" x="267" y="297" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
-                                <state key="normal" image="ico_blog2.png">
+                                <state key="normal" image="ew_cont_blogger_icon.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -773,7 +773,7 @@
                                 <rect key="frame" x="267" y="135" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
-                                <state key="normal" image="ico_twitter2.png">
+                                <state key="normal" image="ew_cont_twitter_icon.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -788,7 +788,7 @@
                                 <rect key="frame" x="267" y="186" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
-                                <state key="normal" image="ico_instagram2.png">
+                                <state key="normal" image="ew_cont_instagram_icon.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -803,7 +803,7 @@
                                 <rect key="frame" x="267" y="240" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
-                                <state key="normal" image="ico_orkut2.png">
+                                <state key="normal" image="ew_cont_orkut_icon.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -916,11 +916,11 @@
                                 </connections>
                             </webView>
                             <view contentMode="scaleToFill" id="aEM-cT-pv2">
-                                <rect key="frame" x="0.0" y="53" width="320" height="350"/>
+                                <rect key="frame" x="0.0" y="45" width="320" height="358"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Loading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nBX-pW-DwG">
-                                        <rect key="frame" x="115" y="130" width="90" height="21"/>
+                                        <rect key="frame" x="115" y="138" width="90" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -1002,22 +1002,136 @@
         <image name="btn_limpar_rota_@2x.png" width="129" height="118"/>
         <image name="btn_tracar_rota_@2x.png" width="129" height="118"/>
         <image name="btn_voltar.png" width="86" height="47"/>
-        <image name="ico_blog2.png" width="60" height="60"/>
-        <image name="ico_facebook2.png" width="60" height="54"/>
-        <image name="ico_instagram2.png" width="60" height="60"/>
-        <image name="ico_orkut2.png" width="60" height="58"/>
-        <image name="ico_twitter2.png" width="60" height="60"/>
+        <image name="ew_cont_blogger_icon.png" width="67" height="67"/>
+        <image name="ew_cont_face_icon.png" width="67" height="67"/>
+        <image name="ew_cont_instagram_icon.png" width="67" height="67"/>
+        <image name="ew_cont_orkut_icon.png" width="67" height="67"/>
+        <image name="ew_cont_twitter_icon.png" width="67" height="67"/>
         <image name="ingresso.png" width="48" height="39"/>
         <image name="saloon.png" width="835" height="460"/>
     </resources>
+    <classes>
+        <class className="Agenda" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Agenda.h"/>
+            <relationships>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="loading" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tela" candidateClass="UIView"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="Blogger" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Blogger.h"/>
+            <relationships>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="loading" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tela" candidateClass="UIView"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="Contato" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Contato.h"/>
+        </class>
+        <class className="Facebook" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Facebook.h"/>
+            <relationships>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="loading" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tela" candidateClass="UIView"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="Ingresso" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Ingresso.h"/>
+            <relationships>
+                <relationship kind="action" name="pressButton:"/>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="loading" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tela" candidateClass="UIView"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="Instagram" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Instagram.h"/>
+            <relationships>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="loading" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tela" candidateClass="UIView"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="Intro" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Intro.h"/>
+            <relationships>
+                <relationship kind="outlet" name="abertura" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="Mapa" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Mapa.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="Mapa2" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Mapa2.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="Orkut" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Orkut.h"/>
+            <relationships>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="loading" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tela" candidateClass="UIView"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="Shows" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Shows.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonPressed"/>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="link360" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="loading" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tela" candidateClass="UIView"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="Tab" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Tab.h"/>
+            <relationships>
+                <relationship kind="outlet" name="preWebView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="Twitter" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Twitter.h"/>
+            <relationships>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="loading" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tela" candidateClass="UIView"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="YouTube" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/YouTube.h"/>
+            <relationships>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="loading" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tela" candidateClass="UIView"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="foy-NM-SBt"/>
-        <segue reference="oa2-Bs-gW1"/>
         <segue reference="4Vb-g4-Ani"/>
+        <segue reference="foy-NM-SBt"/>
     </inferredMetricsTieBreakers>
 </document>

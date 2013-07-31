@@ -25,4 +25,6 @@
 @property (strong, nonatomic) IBOutlet UIView  *tela;
 @property (strong, nonatomic) IBOutlet UILabel *loading;
 
+- (IBAction)pressButton:(id)sender;
+
 @end

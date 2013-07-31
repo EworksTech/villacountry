@@ -37,6 +37,10 @@
     
 }
 
+- (IBAction)pressButton:(id)sender{
+    [self.navigationController popViewControllerAnimated: YES]; // or popToRoot... if required.
+}
+
 //- (void)webViewDidFinishLoad:(UIWebView *)webView {
 //    [self.navigationController pushViewController:webView animated:YES];
 //
