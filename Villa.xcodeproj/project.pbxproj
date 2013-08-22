@@ -42,6 +42,10 @@
 		59D4730E17A2D67A00730FFD /* ew_cont_tela_contato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59D4730217A2D67A00730FFD /* ew_cont_tela_contato.jpg */; };
 		59D4730F17A2D67A00730FFD /* ew_cont_tela_contato.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D4730317A2D67A00730FFD /* ew_cont_tela_contato.png */; };
 		59D4731017A2D67A00730FFD /* ew_cont_twitter_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D4730417A2D67A00730FFD /* ew_cont_twitter_icon.png */; };
+		59F5F2DB17B585BD0078B9EF /* ew_ingresso.png in Resources */ = {isa = PBXBuildFile; fileRef = 59F5F2DA17B585BD0078B9EF /* ew_ingresso.png */; };
+		59F910C617B2E3BF004D8AAD /* ew_bg_social.png in Resources */ = {isa = PBXBuildFile; fileRef = 59F910C317B2E3BF004D8AAD /* ew_bg_social.png */; };
+		59F910C717B2E3BF004D8AAD /* ew_img_contato.png in Resources */ = {isa = PBXBuildFile; fileRef = 59F910C417B2E3BF004D8AAD /* ew_img_contato.png */; };
+		59F910C817B2E3BF004D8AAD /* ew_tela_contato.png in Resources */ = {isa = PBXBuildFile; fileRef = 59F910C517B2E3BF004D8AAD /* ew_tela_contato.png */; };
 		C6004CC31792408400F480FD /* Mapa2.m in Sources */ = {isa = PBXBuildFile; fileRef = C6004CC21792408400F480FD /* Mapa2.m */; };
 		C692D52B1792E78D00EBB34F /* Ingresso.m in Sources */ = {isa = PBXBuildFile; fileRef = C692D52A1792E78D00EBB34F /* Ingresso.m */; };
 		C692D52E1792ED2C00EBB34F /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = C692D52D1792ED2C00EBB34F /* Facebook.m */; };
@@ -193,6 +197,10 @@
 		59D4730217A2D67A00730FFD /* ew_cont_tela_contato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ew_cont_tela_contato.jpg; sourceTree = "<group>"; };
 		59D4730317A2D67A00730FFD /* ew_cont_tela_contato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ew_cont_tela_contato.png; sourceTree = "<group>"; };
 		59D4730417A2D67A00730FFD /* ew_cont_twitter_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ew_cont_twitter_icon.png; sourceTree = "<group>"; };
+		59F5F2DA17B585BD0078B9EF /* ew_ingresso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ew_ingresso.png; sourceTree = "<group>"; };
+		59F910C317B2E3BF004D8AAD /* ew_bg_social.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ew_bg_social.png; sourceTree = "<group>"; };
+		59F910C417B2E3BF004D8AAD /* ew_img_contato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ew_img_contato.png; sourceTree = "<group>"; };
+		59F910C517B2E3BF004D8AAD /* ew_tela_contato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ew_tela_contato.png; sourceTree = "<group>"; };
 		C6004CC11792408400F480FD /* Mapa2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mapa2.h; sourceTree = "<group>"; };
 		C6004CC21792408400F480FD /* Mapa2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mapa2.m; sourceTree = "<group>"; };
 		C692D5291792E78D00EBB34F /* Ingresso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ingresso.h; sourceTree = "<group>"; };
@@ -443,6 +451,10 @@
 		D2720974178E442000A67C04 /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
+				59F5F2DA17B585BD0078B9EF /* ew_ingresso.png */,
+				59F910C317B2E3BF004D8AAD /* ew_bg_social.png */,
+				59F910C417B2E3BF004D8AAD /* ew_img_contato.png */,
+				59F910C517B2E3BF004D8AAD /* ew_tela_contato.png */,
 				59D472F917A2D67A00730FFD /* ew_cont_bg_background.png */,
 				59D472FA17A2D67A00730FFD /* ew_cont_bg_content_@2x.png */,
 				59D472FB17A2D67A00730FFD /* ew_cont_bg_content.png */,
@@ -795,6 +807,10 @@
 				59D4730E17A2D67A00730FFD /* ew_cont_tela_contato.jpg in Resources */,
 				59D4730F17A2D67A00730FFD /* ew_cont_tela_contato.png in Resources */,
 				59D4731017A2D67A00730FFD /* ew_cont_twitter_icon.png in Resources */,
+				59F910C617B2E3BF004D8AAD /* ew_bg_social.png in Resources */,
+				59F910C717B2E3BF004D8AAD /* ew_img_contato.png in Resources */,
+				59F910C817B2E3BF004D8AAD /* ew_tela_contato.png in Resources */,
+				59F5F2DB17B585BD0078B9EF /* ew_ingresso.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

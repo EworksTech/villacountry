@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="f8L-3T-Y5X">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="f8L-3T-Y5X">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -42,6 +42,21 @@
                                     <outlet property="delegate" destination="htX-Sy-K4T" id="oox-M1-Soo"/>
                                 </connections>
                             </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jUM-Aa-STP">
+                                <rect key="frame" x="8" y="8" width="58" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="btn_voltar.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed" destination="htX-Sy-K4T" eventType="touchUpInside" id="fMA-fy-buM"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" id="5Vh-e3-OpU">
                                 <rect key="frame" x="0.0" y="55" width="320" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -60,28 +75,13 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QQe-ZA-ySB">
-                                <rect key="frame" x="13" y="265" width="295" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonPressed" destination="htX-Sy-K4T" eventType="touchUpInside" id="x47-E1-S6Q"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Kbl-vQ-teD"/>
                     <connections>
                         <outlet property="activityIndicator" destination="iFY-rZ-6xb" id="bSr-G7-IJg"/>
-                        <outlet property="link360" destination="QQe-ZA-ySB" id="WJe-eB-gk7"/>
+                        <outlet property="goback" destination="jUM-Aa-STP" id="eFM-Qv-xW8"/>
                         <outlet property="loading" destination="x7L-O7-n0h" id="cEZ-E3-6tz"/>
                         <outlet property="tela" destination="5Vh-e3-OpU" id="Dt5-En-kMz"/>
                         <outlet property="webView" destination="D8W-c4-Wh5" id="5Jk-xo-cAE"/>
@@ -120,7 +120,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ingresso.png" id="8oI-aJ-aiw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ew_ingresso.png" id="8oI-aJ-aiw">
                                 <rect key="frame" x="260" y="2" width="48" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -723,24 +723,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="579"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P5g-Rs-2ua">
-                                <rect key="frame" x="260" y="71" width="50" height="271"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ew_bg_social.png" id="w3k-z1-hSL">
+                                <rect key="frame" x="257" y="67" width="63" height="276"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a8X-ZH-4uf">
-                                <rect key="frame" x="13" y="209" width="235" height="134"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h1l-5D-nfA">
-                                <rect key="frame" x="267" y="81" width="36" height="35"/>
+                                <rect key="frame" x="270" y="79" width="36" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                 <state key="normal" image="ew_cont_face_icon.png">
@@ -755,7 +743,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CFT-eT-dhl">
-                                <rect key="frame" x="267" y="297" width="36" height="36"/>
+                                <rect key="frame" x="270" y="295" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                 <state key="normal" image="ew_cont_blogger_icon.png">
@@ -770,7 +758,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="b2I-Tz-eal">
-                                <rect key="frame" x="267" y="135" width="36" height="36"/>
+                                <rect key="frame" x="270" y="133" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                 <state key="normal" image="ew_cont_twitter_icon.png">
@@ -785,7 +773,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CdK-A4-8IN">
-                                <rect key="frame" x="267" y="186" width="36" height="36"/>
+                                <rect key="frame" x="270" y="184" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                 <state key="normal" image="ew_cont_instagram_icon.png">
@@ -800,7 +788,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="V3W-l5-Bcy">
-                                <rect key="frame" x="267" y="240" width="36" height="36"/>
+                                <rect key="frame" x="270" y="238" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                 <state key="normal" image="ew_cont_orkut_icon.png">
@@ -814,61 +802,14 @@
                                     <segue destination="KPb-Aa-hId" kind="push" id="NLv-nR-0bK"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="saloon.png" id="d2q-Rj-QZu">
-                                <rect key="frame" x="13" y="71" width="237" height="131"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ew_img_contato.png" id="d2q-Rj-QZu">
+                                <rect key="frame" x="0.0" y="67" width="253" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ENTRE EM CONTATO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GAc-xk-s6Q">
-                                <rect key="frame" x="18" y="206" width="230" height="37"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ew_tela_contato.png" id="JDi-qC-Z1v">
+                                <rect key="frame" x="2" y="212" width="247" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="21"/>
-                                <color key="textColor" red="0.96470588239999999" green="0.76470588240000004" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <size key="shadowOffset" width="0.0" height="1"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="11 3868 5858" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dkD-K4-Kor">
-                                <rect key="frame" x="18" y="231" width="230" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="24"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <size key="shadowOffset" width="0.0" height="1"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Zg-MM-GCT">
-                                <rect key="frame" x="18" y="285" width="235" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Av. Francisco Matarazzo, 774
-
-</string>
-                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="13"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <size key="shadowOffset" width="0.0" height="1"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="urv-g2-ykM">
-                                <rect key="frame" x="20" y="306" width="235" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Água Branca - São Paulo
-
-</string>
-                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="13"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <size key="shadowOffset" width="0.0" height="1"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ENDEREÇO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ygJ-gV-Hrf">
-                                <rect key="frame" x="18" y="266" width="230" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="21"/>
-                                <color key="textColor" red="0.96470588239999999" green="0.76470588240000004" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <size key="shadowOffset" width="0.0" height="1"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -908,7 +849,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" id="Jfk-XE-M60">
-                                <rect key="frame" x="0.0" y="53" width="320" height="350"/>
+                                <rect key="frame" x="0.0" y="45" width="320" height="358"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -1002,13 +943,15 @@
         <image name="btn_limpar_rota_@2x.png" width="129" height="118"/>
         <image name="btn_tracar_rota_@2x.png" width="129" height="118"/>
         <image name="btn_voltar.png" width="86" height="47"/>
+        <image name="ew_bg_social.png" width="106" height="461"/>
         <image name="ew_cont_blogger_icon.png" width="67" height="67"/>
         <image name="ew_cont_face_icon.png" width="67" height="67"/>
         <image name="ew_cont_instagram_icon.png" width="67" height="67"/>
         <image name="ew_cont_orkut_icon.png" width="67" height="67"/>
         <image name="ew_cont_twitter_icon.png" width="67" height="67"/>
-        <image name="ingresso.png" width="48" height="39"/>
-        <image name="saloon.png" width="835" height="460"/>
+        <image name="ew_img_contato.png" width="496" height="340"/>
+        <image name="ew_ingresso.png" width="94" height="77"/>
+        <image name="ew_tela_contato.png" width="496" height="273"/>
     </resources>
     <classes>
         <class className="Agenda" superclassName="UIViewController">
@@ -1094,7 +1037,7 @@
             <relationships>
                 <relationship kind="action" name="buttonPressed"/>
                 <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
-                <relationship kind="outlet" name="link360" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="goback" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="loading" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="tela" candidateClass="UIView"/>
                 <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
@@ -1131,7 +1074,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="4Vb-g4-Ani"/>
         <segue reference="foy-NM-SBt"/>
+        <segue reference="huI-hB-g9i"/>
     </inferredMetricsTieBreakers>
 </document>

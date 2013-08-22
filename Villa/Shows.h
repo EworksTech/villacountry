@@ -11,7 +11,7 @@
 @interface Shows : UIViewController
 {
     IBOutlet UIWebView *webView;
-    IBOutlet UIButton  *link360;
+    IBOutlet UIButton  *goback;
     
     IBOutlet UIView  *tela;
     IBOutlet UILabel *loading;

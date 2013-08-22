@@ -28,7 +28,7 @@
     [super viewDidLoad];
     
     
-    NSString *urlAdress = @"http://www.youtube.com/results?search_query=villa+country";
+    NSString *urlAdress = @"http://www.youtube.com/user/VillaCountryOficial";
     
     
     NSURL *url = [NSURL URLWithString:urlAdress];

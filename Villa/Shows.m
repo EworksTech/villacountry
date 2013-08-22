@@ -66,10 +66,11 @@
     
     NSURL *url = [NSURL URLWithString:urlAdress];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    
     [webView loadRequest:requestObj];
 
 
-    
+    goback.hidden = true;
     
     
     
@@ -80,8 +81,13 @@
 
 
 - (IBAction)buttonPressed {
-    NSString *s = [ NSString stringWithFormat:@"https://www.ticket360.com.br/eventos/pesquisar?s=villa+country"];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:s]];
+    NSString *urlAdress = @"http://www.villacountry.com.br/villa/index_app.asp";
+    
+    
+    NSURL *url = [NSURL URLWithString:urlAdress];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    
+    [webView loadRequest:requestObj];
 }
 
 - (void)viewDidUnload
@@ -94,23 +100,45 @@
     // e.g. self.myOutlet = nil;
 }
 
-- (void)webViewDidStartLoad:(UIWebView *)webView
+- (void)webViewDidStartLoad:(UIWebView *)aWebView
 {
     [_activityIndicator startAnimating];
     tela.hidden = FALSE;
     loading.hidden = FALSE;
     
+    
+    
 }
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView
+- (void)webViewDidFinishLoad:(UIWebView *)aWebView
 {
     [_activityIndicator stopAnimating];
     _activityIndicator.hidden = TRUE;
     tela.hidden = TRUE;
     loading.hidden = TRUE;
+    
+    
+    NSString * currentURL = webView.request.mainDocumentURL.absoluteString;
+    
+    
+    if([currentURL isEqualToString:@"http://www.villacountry.com.br/villa/index_app.asp"]){
+       goback.hidden = true;
+    } else {
+       goback.hidden = false;
+    }
 }
 
-
+- (BOOL)webView:(UIWebView *)aWebView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    
+    NSLog(@"%@",[[request URL] fragment]);
+    if([[[request URL] fragment] isEqualToString:@"contato"]){
+        [self.parentViewController.tabBarController setSelectedIndex:3];
+        [aWebView stringByEvaluatingJavaScriptFromString:@"window.location='#dummy'"];
+        return NO;
+    } 
+    
+    return YES;
+}
 
 
 #pragma mark - Web View Delegate
