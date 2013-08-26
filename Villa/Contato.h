@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Contato : UIViewController
+@interface Contato : UIViewController{
+    
+    IBOutlet UIView *sdview;
+    IBOutlet UIView *hdview;
+   }
+
+@property (nonatomic,retain) UIView *sdview;
+@property (nonatomic,retain) UIView *hdview;
+
 
 @end

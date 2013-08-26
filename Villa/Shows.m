@@ -21,6 +21,8 @@
 }
 
 #pragma mark - View lifecycle
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_IPHONE_5 (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 568.0f)
 
 - (void)viewDidLoad
 {
@@ -54,14 +56,18 @@
     [item3 setFinishedSelectedImage:selectedImage3 withFinishedUnselectedImage:unselectedImage3];
     [item4 setFinishedSelectedImage:selectedImage4 withFinishedUnselectedImage:unselectedImage4];
     
-
-    
-    
     
     [super viewDidLoad];
     
-
-    NSString *urlAdress = @"http://www.villacountry.com.br/villa/index_app.asp";
+    NSMutableString *urlAdress = [[NSMutableString alloc] init];
+   // NSLog(@"%d",IS_IPHONE_5);
+    if(IS_IPHONE_5){
+        [urlAdress setString:@"http://www.villacountry.com.br/villa/index_app5.asp"];
+        
+    } else {
+        [urlAdress setString:@"http://www.villacountry.com.br/villa/index_app.asp"];
+    }
+    
     
     
     NSURL *url = [NSURL URLWithString:urlAdress];
@@ -81,7 +87,15 @@
 
 
 - (IBAction)buttonPressed {
-    NSString *urlAdress = @"http://www.villacountry.com.br/villa/index_app.asp";
+    
+    NSMutableString *urlAdress = [[NSMutableString alloc] init];
+    
+    if(IS_IPHONE_5){
+        [urlAdress setString:@"http://www.villacountry.com.br/villa/index_app5.asp"];
+        
+    } else {
+        [urlAdress setString:@"http://www.villacountry.com.br/villa/index_app.asp"];
+    }
     
     
     NSURL *url = [NSURL URLWithString:urlAdress];
@@ -121,7 +135,7 @@
     NSString * currentURL = webView.request.mainDocumentURL.absoluteString;
     
     
-    if([currentURL isEqualToString:@"http://www.villacountry.com.br/villa/index_app.asp"]){
+    if([currentURL isEqualToString:@"http://www.villacountry.com.br/villa/index_app.asp"] || [currentURL isEqualToString:@"http://www.villacountry.com.br/villa/index_app5.asp"]){
        goback.hidden = true;
     } else {
        goback.hidden = false;
@@ -130,7 +144,7 @@
 
 - (BOOL)webView:(UIWebView *)aWebView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     
-    NSLog(@"%@",[[request URL] fragment]);
+    //NSLog(@"%@",[[request URL] fragment]);
     if([[[request URL] fragment] isEqualToString:@"contato"]){
         [self.parentViewController.tabBarController setSelectedIndex:3];
         [aWebView stringByEvaluatingJavaScriptFromString:@"window.location='#dummy'"];
